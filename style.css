@@ -499,14 +499,16 @@ body {
   line-height: 2.6;
 }
 
+/* Projects Section */
 .projects {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px;
   margin-top: 80px;
   padding: 0 20px;
   text-align: center;
 }
 
+/* Header */
 .project-header {
   margin-bottom: 40px;
 }
@@ -520,21 +522,22 @@ body {
   padding-bottom: 8px;
 }
 
-/* ✅ THIS IS THE FIX */
+/* Project Cards Container */
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 👈 3 IN ONE ROW */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  justify-items: center;
 }
 
+/* Individual Project Card */
 .project-card {
   background-color: #000;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
   max-width: 300px;
-
+  flex: 1 1 250px;
   box-shadow: 0 0 10px #b74b4b;
   transition: transform 0.3s ease;
 
@@ -547,6 +550,7 @@ body {
   transform: translateY(-10px);
 }
 
+/* Project Image */
 .project-img {
   width: 100%;
   height: 180px;
@@ -556,12 +560,14 @@ body {
   border: 2px solid #b74b4b;
 }
 
+/* Project Title */
 .project-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
+/* Project Description */
 .project-card p {
   font-size: 0.95rem;
   color: #ccc;
@@ -569,6 +575,7 @@ body {
   margin-bottom: 15px;
 }
 
+/* Button */
 .project-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -582,19 +589,6 @@ body {
 
 .project-btn:hover {
   background-color: #b74b4b;
-}
-
-/* ✅ RESPONSIVE (SAFE & STANDARD) */
-@media (max-width: 900px) {
-  .project-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .project-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 
