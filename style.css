@@ -581,6 +581,15 @@ body {
   .project-btn:hover {
     background-color:  #b74b4b;
   }
+/* Move 4th card slightly right */
+.project-card:nth-child(4) {
+  margin-left: 160px;
+}
+
+/* Optional: keep spacing consistent */
+.project-card:nth-child(5) {
+  margin-left: 0;
+}
 
   .contact-container {
     width: 100%;
